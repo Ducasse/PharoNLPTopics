@@ -153,14 +153,14 @@ TestBPE1 >> testPrepareWordsFromText [
 TestBPE1 >> testTwoMerges [
 
 	| enc |
-	enc := BPE new. 
+	enc := BPE1 new. 
 	enc fromText: self text.
 	enc computeVocabulary.
 	enc mergesOneStep .
 	enc mergesOneStep .
 	
-	self assert: enc merges1 first equals: #('e' 's')->'es'. 
-	self assert: enc merges1 second equals: #('es' 't')->'est'. 
+	self assert: enc merges first equals: #('e' 's')->'es'. 
+	self assert: enc merges second equals: #('es' 't')->'est'. 
 ]
 
 { #category : 'tests' }
