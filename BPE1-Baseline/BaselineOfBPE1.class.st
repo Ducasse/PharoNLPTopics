@@ -9,8 +9,11 @@ Class {
 BaselineOfBPE1 >> baseline: spec [
     <baseline>
     spec for: #common do: [
-        spec package: 'BPE1'.
-        spec group: 'default' with: #('BPE1').
-    ].
+			spec
+				package: #'BPE1'.
+			spec
+				group: 'Core' with: #( 'BPE1' );
+				group: 'default'
+				with: #( 'BPE1' ) ]
 
 ]
