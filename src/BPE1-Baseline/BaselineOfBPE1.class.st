@@ -10,7 +10,7 @@ BaselineOfBPE1 >> baseline: spec [
     <baseline>
     spec for: #common do: [
 			spec
-				package: #'BPE1'.
+				package: 'BPE1'.
 			spec
 				group: 'Core' with: #( 'BPE1' );
 				group: 'default'
